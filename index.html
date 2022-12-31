@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando o Efeito Parallax</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    html, body{
+        height: 100vh;
+    }
+
+    body{
+        height: 100vh;
+        background-color: white;
+    }
+
+    header{
+        height: 10vh;
+        background-color: #6c6c6c;
+        text-align: center;
+        padding: 20px;
+        color: white;
+        font-size: 2.3vw;
+        border-bottom: 1px solid black;
+    }
+
+    main section{
+        background-color: #c4c4c4;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        font-size: 3.5vw;
+        padding-left: 30px;
+        line-height: 2em;
+    }
+
+    section p {
+        display: inline-block;
+        margin-bottom: 2em;
+        padding: 10px;
+    }
+
+    section.normal p{
+        background-color: white;
+    }
+
+    section.normal{
+        background-color: white;
+    }
+
+
+    .imagem1{
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.45);
+    }
+
+    #img1{
+        background: url('imagens/img1.jpg') no-repeat top center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .imagem1 >p{
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        background-image: linear-gradient(to bottom,#96ef5223, transparent);
+        border-radius: 20px;
+    }
+
+    .imagem2{
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.45);
+    }
+
+    #img2{
+        background: url('imagens/img2.jpg') no-repeat top center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .imagem2 >p{
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        background-image: linear-gradient(to bottom, #122836d2, transparent);
+        border-radius: 20px;
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>Efeito Paralax - Imagens / Textos</h1>
+    </header>
+
+    <main>
+        <section class="normal">
+            <p>
+                Estou ficando cansado <br>
+                Da tal tecnologia <br>
+                Só se fala por e-mail <br>
+                Mensagem curta e fria <br>
+                Twitter e Facebook <br>
+                Antes que eu caduque <br>
+                Vou dizer tudo em poesia.
+            </p>
+        </section>
+
+        <section class="imagem1" id="img1">
+            <p>
+                Não é mais como era antes <br>
+                É tudo abreviado <br>
+                "Você" só tem duas letras <br>
+                O "O" e o "E" foi riscado <br>
+                Para declarar o amor <br>
+                Basta botar uma flor <br>
+                E um coração desenhado.
+            </p>
+        </section>
+
+        <section class="normal">
+            <p>
+                Arroba agora não pesa <br>
+                É parte de um endereço <br>
+                Ponto final nem se usa <br>
+                Ou vai até no começo <br>
+                Agora é .com <br>
+                Se o saite é muito bom <br>
+                Ele vale um alto preço. <br>
+            </p>
+                <br>
+            <p>
+                Pra piorar a liguagem <br>
+                O emoticom é um risco <br>
+                Tem símbolo para tudo <br>
+                Ponto e vírgula e um asterisco <br>
+                Um beijo significa <br>
+                Pra entender como fica <br>
+                Decifre esse rabisco.
+            </p>
+        </section>
+
+        <section class="imagem2" id="img2">
+            <p>
+                Tenho saudade das cartas <br>
+                Escritas com a própria mão <br>
+                Mandava no mês de Junho <br>
+                Só chegava no Verão <br>
+                Mas matava a saudade <br>
+                Era texto de verdade <br>
+                Nas linhas do coração.
+            </p>
+        </section>
+
+        <section class="normal">
+            <p>
+                Agora, escrevo e envio <br>
+                Chegando na mesma hora <br>
+                Mas quando vou prosear <br>
+                A pessoa foi embora <br>
+                Abriu outro aplicativo <br>
+                O mundo ficou cativo <br>
+            </p>
+            <br>
+            <p>
+                Da tecnologia do agora. <br>
+                Felizmente, pra orar <br>
+                Não precisa de internet <br>
+                Deus escuta todo mundo <br>
+                Se quiser, faça esse teste <br>
+                Dois pontos são dois joelhos <br>
+                Seus lábios são aparelhos <br>
+                Deixe que Deus interprete.
+            </p>
+        </section>
+
+        <footer>
+            <p> Criado por <strong>Patrick Machado</strong> testando <strong>Efeito Parallax</strong></p>
+        </footer>
+    </main>
+</body>
+</html>
